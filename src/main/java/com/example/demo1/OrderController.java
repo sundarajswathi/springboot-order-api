@@ -28,9 +28,8 @@ public class OrderController {
 
     }
    @GetMapping
-    public List<OrderDataModel> getAllForms(){//multiple values store pani irukum db la athunala than namba
-        //list use panurom ethu multiple values return pani orey method name la namku send  panum getallforms()--->ethu method name
-        //method name illama method declare pana mudiyathu apram complie time error varum 
+    public List<OrderDataModel> getAllForms(){
+       
         return form.findAll();
     }
    @GetMapping("/{id}")
